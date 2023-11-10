@@ -8,12 +8,14 @@
 import UIKit
 import Modules
 import UIComponents
+import ThemeColors
+import Domain
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
         let _ = Modules()
+        let _ = Friend()
     }
 }

@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		875B58B62A92245700833E69 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B58B52A92245700833E69 /* ExampleApp.swift */; };
-		875B58B82A92245700833E69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B58B72A92245700833E69 /* ContentView.swift */; };
+		875B58B82A92245700833E69 /* ExampleScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B58B72A92245700833E69 /* ExampleScreenView.swift */; };
 		875B58BA2A92245800833E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875B58B92A92245700833E69 /* Assets.xcassets */; };
 		875B58BD2A92245800833E69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875B58BC2A92245800833E69 /* Preview Assets.xcassets */; };
+		875B58D82A96886800833E69 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 875B58D72A96886800833E69 /* Modules */; };
+		875B58DA2A96886E00833E69 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 875B58D92A96886E00833E69 /* UIComponents */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		875B58B22A92245700833E69 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		875B58B52A92245700833E69 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
-		875B58B72A92245700833E69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		875B58B72A92245700833E69 /* ExampleScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleScreenView.swift; sourceTree = "<group>"; };
 		875B58B92A92245700833E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		875B58BC2A92245800833E69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				875B58DA2A96886E00833E69 /* UIComponents in Frameworks */,
+				875B58D82A96886800833E69 /* Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +41,7 @@
 			children = (
 				875B58B42A92245700833E69 /* Example */,
 				875B58B32A92245700833E69 /* Products */,
+				875B58D62A96886800833E69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				875B58B52A92245700833E69 /* ExampleApp.swift */,
-				875B58B72A92245700833E69 /* ContentView.swift */,
+				875B58B72A92245700833E69 /* ExampleScreenView.swift */,
 				875B58B92A92245700833E69 /* Assets.xcassets */,
 				875B58BB2A92245800833E69 /* Preview Content */,
 			);
@@ -65,6 +70,13 @@
 				875B58BC2A92245800833E69 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		875B58D62A96886800833E69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +95,10 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				875B58D72A96886800833E69 /* Modules */,
+				875B58D92A96886E00833E69 /* UIComponents */,
+			);
 			productName = Example;
 			productReference = 875B58B22A92245700833E69 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -137,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				875B58B82A92245700833E69 /* ContentView.swift in Sources */,
+				875B58B82A92245700833E69 /* ExampleScreenView.swift in Sources */,
 				875B58B62A92245700833E69 /* ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +291,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +357,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		875B58D72A96886800833E69 /* Modules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Modules;
+		};
+		875B58D92A96886E00833E69 /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIComponents;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 875B58AA2A92245700833E69 /* Project object */;
 }
