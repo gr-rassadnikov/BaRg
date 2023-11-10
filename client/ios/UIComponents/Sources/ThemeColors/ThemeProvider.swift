@@ -7,6 +7,6 @@
 
 import UIKit
 
-public protocol ThemeProvider {
-    static var bg: UIColor { get }
+public final class ThemeProvider {
+    public static let bg = UIColor.blue
 }
